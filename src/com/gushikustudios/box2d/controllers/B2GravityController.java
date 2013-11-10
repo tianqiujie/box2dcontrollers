@@ -42,7 +42,8 @@ public class B2GravityController extends B2Controller
          {
             Body body = m_bodyList.get(i);
             mTmp.set(mControllerGravity).mul(body.getMass());
-            body.applyForce(mTmp, body.getPosition());
+            //body.applyForce(mTmp, body.getPosition());
+            body.applyForce(mTmp, body.getPosition(), ture);
          }
       }
    }
